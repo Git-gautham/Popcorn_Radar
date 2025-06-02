@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popcorn Radar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+<!-- Back to Top Anchor -->
+<a id="top"></a>
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/Popcorn Radar logo.png" alt="Popcorn Radar Logo" />
+    </div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#trending">Trending Movies</a></li>
+      <li><a href="#popular">Popular Shows</a></li>
+      <li><a href="#reviews">User Reviews</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <h1>Popcorn Radar</h1>
+      <p>Your gateway to trending movies and shows!</p>
+      <a href="#trending" class="cta-btn">Explore Trending</a>
+    </div>
+<div class="hero-right">
+  <svg viewBox="0 0 64 64" width="200" height="200" class="clapperboard">
+    <!-- Clapperboard base -->
+    <rect x="8" y="20" width="48" height="32" rx="4" fill="#2d2d2d" />
+    <!-- Stripes -->
+    <path d="M8 20 L20 8 L28 8 L16 20 Z" fill="#fff" />
+    <path d="M20 20 L32 8 L40 8 L28 20 Z" fill="#bbb" />
+    <path d="M32 20 L44 8 L52 8 L40 20 Z" fill="#fff" />
+    <!-- Top clapper (animated) -->
+    <g class="clapper-top">
+      <rect x="8" y="8" width="48" height="12" rx="2" fill="#444" />
+      <path d="M8 8 L20 20" stroke="#fff" stroke-width="2" />
+      <path d="M20 8 L32 20" stroke="#bbb" stroke-width="2" />
+      <path d="M32 8 L44 20" stroke="#fff" stroke-width="2" />
+    </g>
+  </svg>
+</div>
+
+
+  <!-- TRENDING MOVIES SECTION -->
+  <section class="trending" id="trending">
+  <h2>Trending Movies</h2>
+  <p>Check out what's hot right now!</p>
+  <div class="movie-grid">
+
+    <!-- Bahubali -->
+    <div class="movie-card">
+      <img src="images/Baahubali_2_The_Conclusion_poster.jpg" alt="Bahubali Poster" />
+      <div class="movie-info">
+        <h3>Bahubali 2 The Conclusion</h3>
+        <p>An epic action drama about a fearless warrior and his destiny.</p>
+      </div>
+      <span class="duration">2h 45m</span>
+      <div class="hover-buttons">
+        <a href="https://www.netflix.com/title/80166811" target="_blank" rel="noopener">Watch Now</a>
+        <input type="checkbox" id="watchlist-bahubali" class="watchlist-checkbox" />
+        <label for="watchlist-bahubali" class="watchlist-toggle"></label>
+      </div>
+    </div>
+
+    <!-- Kalki -->
+    <div class="movie-card">
+      <img src="images/Kalki_2898_AD.jpg" alt="Kalki Poster" />
+      <div class="movie-info">
+        <h3>Kalki 2898 AD</h3>
+        <p>A gripping thriller that explores justice and revenge.</p>
+      </div>
+      <span class="duration">2h 05m</span>
+      <div class="hover-buttons">
+        <a href="https://www.primevideo.com/detail/0JY2Z7G0Y76N1V0P9E0ZBBR8VY" target="_blank" rel="noopener">Watch Now</a>
+        <input type="checkbox" id="watchlist-kalki" class="watchlist-checkbox" />
+        <label for="watchlist-kalki" class="watchlist-toggle"></label>
+      </div>
+    </div>
+
+    <!-- Chaava -->
+    <div class="movie-card">
+      <img src="images/Chhaava_film_poster.jpg" alt="Chaava Poster" />
+      <div class="movie-info">
+        <h3>Chaava</h3>
+        <p>A heartfelt story of love, sacrifice, and hope.</p>
+      </div>
+      <span class="duration">1h 50m</span>
+      <div class="hover-buttons">
+        <a href="https://www.hotstar.com/in/movies/chaava/1260018331" target="_blank" rel="noopener">Watch Now</a>
+        <input type="checkbox" id="watchlist-chaava" class="watchlist-checkbox" />
+        <label for="watchlist-chaava" class="watchlist-toggle"></label>
+      </div>
+    </div>
+
+    <!-- Thudarum -->
+    <div class="movie-card">
+      <img src="images/Thudarum_film.jpg.webp" alt="Thudarum Poster" />
+      <div class="movie-info">
+        <h3>Thudarum</h3>
+        <p>A thrilling tale of love and action in the city.</p>
+      </div>
+      <span class="duration">2h 10m</span>
+      <div class="hover-buttons">
+        <a href="https://www.example.com/thudarum" target="_blank" rel="noopener">Watch Now</a>
+        <input type="checkbox" id="watchlist-thudarum" class="watchlist-checkbox" />
+        <label for="watchlist-thudarum" class="watchlist-toggle"></label>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="popular" id="popular">
+  <h2>Popular Shows</h2>
+  <p>Binge-worthy picks you shouldn’t miss!</p>
+  <div class="movie-grid">
+
+    <!-- Stranger Things -->
+    <div class="movie-card">
+      <img src="images/stranger-things.jpg" alt="Stranger Things Poster" />
+      <div class="movie-info">
+        <h3>Stranger Things</h3>
+        <p>Genre: Sci-Fi, Thriller<br>4 Seasons, 34 Episodes<br>When a young boy vanishes, a small town uncovers a mystery involving secret experiments and supernatural forces.</p>
+      </div>
+      <div class="hover-buttons">
+        <a href="https://www.netflix.com/title/80057281" target="_blank" rel="noopener">Watch Now</a>
+        <input type="checkbox" id="watchlist-stranger" class="watchlist-checkbox" />
+        <label for="watchlist-stranger" class="watchlist-toggle"></label>
+      </div>
+    </div>
+
+    <!-- The Mandalorian -->
+    <div class="movie-card">
+      <img src="images/mandalorian.jpg" alt="The Mandalorian Poster" />
+      <div class="movie-info">
+        <h3>The Mandalorian</h3>
+        <p>Genre: Sci-Fi, Action<br>3 Seasons, 24 Episodes<br>A lone bounty hunter travels the galaxy far from the authority of the New Republic in this Star Wars universe story.</p>
+      </div>
+      <div class="hover-buttons">
+        <a href="https://www.disneyplus.com/series/the-mandalorian/3jLIGMDYINqD" target="_blank" rel="noopener">Watch Now</a>
+        <input type="checkbox" id="watchlist-mandalorian" class="watchlist-checkbox" />
+        <label for="watchlist-mandalorian" class="watchlist-toggle"></label>
+      </div>
+    </div>
+
+    <!-- Breaking Bad -->
+    <div class="movie-card">
+      <img src="images/breaking-bad.jpg" alt="Breaking Bad Poster" />
+      <div class="movie-info">
+        <h3>Breaking Bad</h3>
+        <p>Genre: Crime, Drama<br>5 Seasons, 62 Episodes<br>A chemistry teacher turns to crime to secure his family's future, building a drug empire with his former student.</p>
+      </div>
+      <div class="hover-buttons">
+        <a href="https://www.netflix.com/title/70143836" target="_blank" rel="noopener">Watch Now</a>
+        <input type="checkbox" id="watchlist-breakingbad" class="watchlist-checkbox" />
+        <label for="watchlist-breakingbad" class="watchlist-toggle"></label>
+      </div>
+    </div>
+
+    <!-- Friends -->
+    <div class="movie-card">
+      <img src="images/friends.jpg" alt="Friends Poster" />
+      <div class="movie-info">
+        <h3>Friends</h3>
+        <p>Genre: Comedy, Sitcom<br>10 Seasons, 236 Episodes<br>Six friends navigate life and love in New York City with lots of laughs, lattes, and iconic moments.</p>
+      </div>
+      <div class="hover-buttons">
+        <a href="https://www.netflix.com/title/70153404" target="_blank" rel="noopener">Watch Now</a>
+        <input type="checkbox" id="watchlist-friends" class="watchlist-checkbox" />
+        <label for="watchlist-friends" class="watchlist-toggle"></label>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="reviews" id="reviews">
+  <h2>User Reviews</h2>
+  <p>Hear what our viewers have to say – and share your own thoughts!</p>
+  <div class="reviews-container">
+    
+    <!-- Left: Review Cards -->
+    <div class="review-cards">
+      <div class="review-card">
+        <img src="images/user_icon.png" alt="User 1">
+        <div>
+          <h3>Arjun M.</h3>
+          <p>Absolutely loved Stranger Things! The plot twists kept me hooked. Can't wait for the next season.</p>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="images/user_icon.png" alt="User 2">
+        <div>
+          <h3>Riya S.</h3>
+          <p>Friends is a classic. No matter how many times I rewatch, it never gets old. Great pick!</p>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="images/user_icon.png" alt="User 3">
+        <div>
+          <h3>Karan T.</h3>
+          <p>The Mandalorian is a visual treat. The VFX and storyline are next level. Highly recommended!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Review Form -->
+    <div class="review-form">
+      <h3>Submit Your Review</h3>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="review">Your Review</label>
+        <textarea id="review" rows="5" placeholder="Share your thoughts..." required></textarea>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>Popcorn Radar</h3>
+      <p>© 2025 Popcorn Radar. All rights reserved.</p>
+
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <a href="https://example.com" target="_blank">Terms & Conditions</a>
+      <a href="https://example.com" target="_blank">Privacy Policy</a>
+    </div>
+  </div>
+
+  <a href="#" class="back-to-top" aria-label="Back to Top">↑</a>
+</footer>
+</body>
+</html>
+
