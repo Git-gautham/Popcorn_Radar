@@ -40,8 +40,6 @@ The website is a responsive, CSS-animated movie discovery platform built using o
 
 ---
 📷 Screenshots
-> Add a few screenshots here if you’d like  
-> You can drag & drop them into the README or use a URL.
 
 ---
  🔗 Live Demo
